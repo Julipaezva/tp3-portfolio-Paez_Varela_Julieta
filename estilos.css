@@ -259,8 +259,6 @@ nav a:hover {
   background: #4b6bff;
 }
 
-
-
 /* FOOTER */
 
 footer {
@@ -326,7 +324,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 50px;
-  border-radius: 40px;
+  border-radius: 15px;
   max-width: 450px;
   width: 100%;
 }
@@ -352,8 +350,7 @@ footer {
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 2px solid #84A59D;
-  border-radius: 40px;
+  border-radius: 15px;
   font-size: 16px;
   background-color: white;
   color: #000000;
@@ -373,18 +370,18 @@ textarea {
 button {
   font-size: 20px;
   font-weight: 600;
-  color: #84A59D;
+  color: #1F4AC9;
   text-align: center;
   height: 50px;
   width: 70px;
-  border: 1px solid #84A59D;
-  border-radius: 40px;
-  background-color: white;
+  border-radius: 15px;
+  background-color: #FCD1CD;
+  border: 2px solid #1F4AC9;
   cursor: pointer;
   transition: 0,5s;
 }
 
 button:hover {
-  background: #84A59D;
-  color: white;
+  background: #1F4AC9;
+  color: #FCD1CD;
 }
