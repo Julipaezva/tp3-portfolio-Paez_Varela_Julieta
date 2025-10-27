@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
+    <body class="body-contacto">
 <!-------HEADER------->        
         <header>
                 <a href="index.html"><img class="logo" src="img/logo.png" class="logo-img"></a>
@@ -18,14 +19,55 @@
                     <a href="contacto.html">Contacto</a>
                 </nav>
         </header>
+<!-------MAIN------->
+            <h2>Contacto</h2>
+            <section class="formulario">
+                <div class="formulario-container">
+                    <form method="post" action="mailto:julipaezva@gmail.com?subject=Email enviado desde portfolio" enctype="text/plain">
+                        <div class="form-fields">
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Nombre*" required>
+                                    <label for="name">Apellido:</label>
+                                    <input type="text" id="apellido" name="apellido" maxlength="30" placeholder="Apellido*" required>
+                                    <label for="phone">Teléfono:</label>
+                                    <input type="tel" id="teléfono" name="teléfono" placeholder="(000)00000000">
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Email*" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="subject">Asunto:</label>
+                                    <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="message">Mensaje:</label>
+                                <textarea id="message" name="message" maxlength="600" placeholder="Escribe tu mensaje" required></textarea>
+                            </div>
+                        </div>
+                        <div class="fin-formulario">
+                            <p>* Campos obligatorios</p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+<!-------FOOTER------->
         <footer>
             <div class="derechos-footer">
                 <p class="p-footer">©2025 Julieta Paez Varela - Todos los derechos reservados.</p>
             </div>
             <div class="icons-footer">
-                <a href="https://www.behance.net/julietapaez2" target="_blank"> <img src="img/behance_icon.png"></a>
-                <a href="https://www.linkedin.com/in/julieta-paez-varela-133717234/" target="_blank"><img src="img/Iinkendl_icon.png"></a>
-                <a href="https://www.instagram.com/jpv_designs" target="_blank"> <img src="img/Instagram_icon.png"></a>
+                <a href="https://www.behance.net/julietapaez2"><img src="img/behance_icon.png"></a>
+                <a href="https://www.linkedin.com/in/julieta-paez-varela-133717234/"><img src="img/Iinkendl_icon.png"></a>
+                <a href="https://www.instagram.com/jpv_designs"><img src="img/Instagram_icon.png"></a>
             </div>
         </footer>
     </body>
+    <script src="app.js"></script>
+</html>   
