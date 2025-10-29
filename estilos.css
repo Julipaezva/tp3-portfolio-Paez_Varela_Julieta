@@ -16,12 +16,26 @@ h1 {
   line-height: normal;
 }
 
-h2 {
+h2{
+  display: inline-block; 
+  color: #1F4AC9;
+  font-family: 'Alexandria';
+  font-size: 100px;
+  font-weight: 600;
+  margin: 50px;
+}
+
+.h2-contacto{
   display: inline-block; 
   color: #FCD1CD;
   font-family: 'Alexandria';
   font-size: 100px;
   font-weight: 600;
+  margin: 50px;
+}
+
+.intro-izq h2 { 
+  color: #FCD1CD;
 }
 
 h3 {
@@ -30,7 +44,14 @@ h3 {
   font-weight: bold;
   color: #1F4AC9;
   font-size: 30pt;
-  border-bottom: 4px solid #1F4AC9;
+}
+
+h4 {
+  display: inline-block; 
+  font-family: 'Alexandria';
+  font-weight: bold;
+  color: #1F4AC9;
+  font-size: 16pt;
 }
 
 p{
@@ -41,9 +62,23 @@ p{
 }
 
 span{
+  font-family: 'Alexandria';
+  color: #1F4AC9;
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+.ticker-text-group span{
   font-family: 'Poppins';
   color: #FCD1CD;
-  font-size: 34px;
+  font-size: 34pt;
+  font-weight: 500;
+}
+
+label {
+  font-family: 'Poppins';
+  color: black;
+  font-size: 16pt;
   font-weight: 500;
 }
 
@@ -66,7 +101,6 @@ body{
 /* HEADER */
 
 header{
-  max-width: auto;
   height: 50px;
   background-color: #1F4AC9;
   display: flex;
@@ -83,17 +117,13 @@ width: 50px;
 
 nav {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 56px;
   padding-left: 100px; 
   padding-right: 100px;
-
 }
 
 nav .botonera {
-  max-width: 1250px;
   height: 30px;
   display: inline-flex; 
   justify-content: center; 
@@ -107,23 +137,20 @@ nav a{
   padding: 10px;
   color: #FCD1CD; 
   font-family:'Alexandria';
-  display:inline-flex;
+  display: inline-flex;
   justify-content: center; 
   text-align: center;
-  border-radius: 100px;
   transition-duration: 0.3s;
   transition-property: transform;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #D05F15;
-  background-color: #D05F15;
-  color: #FCD1CD;
+  color: #D05F15;
   transform: scale(1.1);
 }
 
-/* MAIN */
+/* MAIN - INDEX */
 
 .introduccion {
   display: flex; 
@@ -183,6 +210,13 @@ nav a:hover {
   align-items: center;
 }
 
+.proyectos-ticker .ticker-contacto-background {
+  background-color: #1F4AC9;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -235,6 +269,7 @@ nav a:hover {
   height: auto;
   object-fit: cover;
 }
+
 .carrusel-arrow {
   background-color: #ede4d1;
   color: #4b6bff;
@@ -258,6 +293,8 @@ nav a:hover {
 .carrusel-arrow:hover{
   background: #4b6bff;
 }
+
+
 
 /* FOOTER */
 
@@ -299,6 +336,8 @@ footer {
 
 /* CONTACTO - HTML */
 
+/* MAIN */
+
 .formulario {
   display: flex;
   align-items: center;
@@ -306,6 +345,7 @@ footer {
   background-position: center;
   justify-content: center;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 .formulario-container {
@@ -384,4 +424,67 @@ button {
 button:hover {
   background: #1F4AC9;
   color: #FCD1CD;
+}
+
+/* SOBRE MI - HTML */
+
+/* MAIN */
+
+.info{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.texto-sobremi p{
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.sobremi{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.columna{
+  display: flex;
+  flex-direction: column;   
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+}
+
+.caja{
+  padding-top: 10px;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 10px;
+  background-color: #D05F15;
+  border-radius: 65px;
+  height: 263px;
+  width: 350px;
+}
+
+li{
+  padding-top: 15px;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.habilidades{
+  display: inline-flex;
+  flex-wrap: wrap;
+  column-gap: 90px
 }
