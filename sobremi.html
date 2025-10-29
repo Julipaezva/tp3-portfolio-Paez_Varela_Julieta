@@ -22,8 +22,8 @@
         <main>
             <h2>Sobre mi</h2>
             <section class="info">
-                <img src="img/foto_sobremi.png">
-                <div class="texto-sobremi">
+                <img src="img/foto_sobremi.png"> <!-- entiendo que dentro de tu sistema visual todo es grande, pero creo que esta foto todavía está muy grande, además te faltan todos los atributos de img -->
+                <div class="texto-sobremi"> <!-- si esto es un texto, no tiene sentido que sea otra etiqueta semántica? -->
                     <h3>Julieta Paez Varela</h3>
                     <p>Estudiante de Diseño y Comunicación Visual e ilustradora freelance con formación y experiencia en el campo de la imagen y la comunicación.</p>
                     <p>Desde el 2019 trabajo de forma independiente realizando ilustraciones digitales para clientes de manera informal. Me apasiona explorar los lenguajes visuales desde una mirada moderna y colorida</p>
@@ -32,7 +32,7 @@
             </section>
 
             <section class="sobremi">
-                <div class="columna">
+                <div class="columna">  <!-- en lugar de utilizar dos columnas probá hacer todo dentro de la misma section y acomodarlo con flex-wrap para que se acomoden en 4 y que, cuando pases a mobile, esto sea menos choclazo -->
                     <div class="caja">
                         <h3>Información</h3>
                         <ul>
