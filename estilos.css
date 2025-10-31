@@ -279,7 +279,7 @@ nav a:hover {
   font-size: 16pt;
   text-decoration: none;
   padding: 10px;
-  height: 26px;
+  height: auto;
   width: auto;
   border-radius: 100px;
 }
@@ -304,7 +304,7 @@ nav a:hover {
   font-size: 16pt;
   text-decoration: none;
   padding: 10px;
-  height: 26px;
+  height: auto;
   width: auto;
   border-radius: 100px;
 }
@@ -397,7 +397,6 @@ footer {
   }
 
   .slide {
-    flex: 0 0 80%;
     margin: 10px auto;
   }
 
@@ -541,12 +540,13 @@ button {
   font-weight: 600;
   color: #1F4AC9;
   text-align: center;
-  height: 50px;
-  width: 70px;
-  border-radius: 15px;
+  height: auto;
+  width: auto;
+  border-radius: 100px;
   background-color: #FCD1CD;
   border: 2px solid #1F4AC9;
   cursor: pointer;
+  padding: 10px;
   transition: 0,5s;
 }
 
