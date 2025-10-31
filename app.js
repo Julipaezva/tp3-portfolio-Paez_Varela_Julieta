@@ -28,3 +28,16 @@ function App() {
 window.onload = () => {
   window.app = new App();
 };
+
+
+function cambiarDisplay(idGaleria, visibilidadNueva) {
+  document.getElementById(idGaleria).style.display = visibilidadNueva;
+}
+
+function mostrarGaleria(tipo) {
+  cambiarDisplay("galeria-" + tipo, "flex");
+}
+
+function ocultarGaleria(tipo) {
+  cambiarDisplay("galeria-" + tipo, "none");
+}

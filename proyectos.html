@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>Portfolio Julieta Paez - Proyectos</title>
         <link href="estilos.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="-" type="image/png">
+        <link rel="icon" href="img/favicon.png" type="image/png">
         <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
@@ -23,16 +23,88 @@
         <main>
             <h2>Proyectos</h2>
             <section class="caja-proyectos">
-                <div class="texto-proyectos">
-                <h3>Colección de libros</h3>
-                <h4>Etiquetas de vino</h4>
+                <h3>Diseño Grafico</h3>
                 </div>
                 <div class="img-proyectos">
-                    <img src="img/img4.png" alt="Ilustración 1" class="carilla-carrusel" />
-                    <img src="img/img4.png" alt="Ilustración 1" class="carilla-carrusel" />
-                    <img src="img/img4.png" alt="Ilustración 1" class="carilla-carrusel" />
-                    <img src="img/img4.png" alt="Ilustración 1" class="carilla-carrusel" />
+                    <a href="#diseno-1"><img src="img/proyectos/vino-thumbnail.png" alt="vino" onClick="mostrarGaleria('diseno')"></a>
+                   <a href="#diseno-2"><img src="img/proyectos/estampillas-thumbnail.png" alt="estampillas" onClick="mostrarGaleria('diseno')"></a>
+                   <a href="#diseno-3"><img src="img/proyectos/libro-thumbnail.png" alt="libro" onClick="mostrarGaleria('diseno')"></a>
+                   <a href="#diseno-4"><img src="img/proyectos/poster-thumbnail.png" alt="Gorrión" onClick="mostrarGaleria('diseno')"></a>
                 </div>
+            </section>
+            <section id="galeria">
+		        <ul id="galeria-oculta">
+                    <li class="contenido-galeria" id="diseno-1">
+						<a href="#" class="primer-ultima-flecha"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('diseno')">
+						<a href="#diseno-2"><img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                    <li class="contenido-galeria" id="diseno-2">
+						<a href="#diseno-1"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('diseno')">
+						<a href="#diseno-3"><img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                    <li class="contenido-galeria" id="diseno-3">
+						<a href="#diseno-2"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('diseno')">
+						<a href="#diseno-4"><img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                    <li class="contenido-galeria" id="diseno-4">
+						<a href="#diseno-3"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('diseno')">
+						<a href="#" class="primer-ultima-flecha"> <img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                </ul>
+            </section>
+
+            <section class="caja-proyectos">
+                <h3>Ilustración</h3>
+                </div>
+                <div class="img-proyectos">
+                    <a href="#ilus-1"><img src="img/proyectos/hiena-thumbnail.png" alt="hiena" onClick="mostrarGaleria('ilus')"></a>
+                   <a href="#ilus-2"><img src="img/proyectos/zorro-thumbnail.png" alt="zorro" onClick="mostrarGaleria('ilus')"></a>
+                   <a href="#ilus-3"><img src="img/proyectos/mujer-thumbnail.png" alt="mujer" onClick="mostrarGaleria('ilus')"></a>
+                   <a href="#ilus-4"><img src="img/proyectos/carnero-thumbnail.png" alt="carnero" onClick="mostrarGaleria('ilus')"></a>
+                </div>
+            </section>
+            <section id="galeria-ilus">
+		        <ul id="galeria-oculta-ilus">
+                    <li class="contenido-galeria" id="ilus-1">
+						<a href="#" class="primer-ultima-flecha"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('ilus')">>
+						<a href="#ilus-2"><img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                    <li class="contenido-galeria" id="ilus-2">
+						<a href="#ilus-1"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('ilus')">>
+						<a href="#ilus-3"><img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                    <li class="contenido-galeria" id="ilus-3">
+						<a href="#ilus-2"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('ilus')">>
+						<a href="#ilus-4"><img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                    <li class="contenido-galeria" id="ilus-4">
+						<a href="#ilus-3"><img src="img/proyectos/anterior.png" alt="anterior"></a>
+						<img class="close" src="img/proyectos/cerrar.png" alt="cerrar" onClick="ocultarGaleria('ilus')">>
+						<a href="#" class="primer-ultima-flecha"> <img src="img/proyectos/siguiente.png" alt="siguiente"></a>
+				    </li>
+                </ul>
+            </section>
+            <section class="caja-proyectos">
+                <h3>Animaciones</h3>
+                <div>
+                    <video controls autoplay loop muted>
+                        <source src="video/logo-1.mp4" type="video/mp4">
+                        <source src="video/logo-1.webm" type="video/webm">
+                    </video>
+                    </div>
+                    <div>
+                    <video controls autoplay loop muted>
+                        <source src="video/logo-2.mp4" type="video/mp4">
+                        <source src="video/logo-2.webm" type="video/webm">
+                    </video>
+                    </div>
             </section>
         </main>
 <!-------FOOTER-------> 
@@ -41,9 +113,9 @@
                 <p>©2025 Julieta Paez Varela - Todos los derechos reservados.</p>
             </div>
             <div class="icons-footer">
-                <a href="https://www.behance.net/julietapaez2" target="_blank"><img src="img/behance_icon.png"></a>
-                <a href="https://www.linkedin.com/in/julieta-paez-varela-133717234/" target="_blank"><img src="img/Iinkendl_icon.png"></a>
-                <a href="https://www.instagram.com/jpv_designs" target="_blank"> <img src="img/Instagram_icon.png"></a>
+                <a href="https://www.behance.net/julietapaez2" target="_blank"><img src="img/behance-icon.svg"></a>
+                <a href="https://www.linkedin.com/in/julieta-paez-varela-133717234/" target="_blank"><img src="img/linkendl-icon.svg"></a>
+                <a href="https://www.instagram.com/jpv_designs" target="_blank"> <img src="img/instagram-icon.svg"></a>
             </div>
         </footer>
     </body>

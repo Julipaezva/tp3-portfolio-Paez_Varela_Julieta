@@ -38,6 +38,10 @@ h3 {
   font-size: 2.5em;
 }
 
+.caja h3{
+  color: #FCD1CD;
+}
+
 h4 {
   font-weight: bold;
   color: #1F4AC9;
@@ -58,10 +62,24 @@ p{
   font-size: 1.1em;
 }
 
+.caja p{
+  color: #FCD1CD;
+}
+
+footer p{
+  color: #FCD1CD;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
 span{
   color: #1F4AC9;
   font-size: 1.3em;
   font-weight: 500;
+}
+
+.caja span{
+  color: #D05F15;
 }
 
 label {
@@ -97,10 +115,6 @@ header{
   justify-content: space-between;
   align-items: center;
   padding-left: 50px;
-}
-
-.logo {
-width: 50px;
 }
 
 /* NAV */
@@ -144,10 +158,6 @@ nav a:hover {
   background-color: #1F4AC9;
 }
 
-@keyframes slide-right{
-  0%{transform:translateX(-100px)}
-  100%{transform:translateX(15px)}
-}
 
 .intro{
   padding-left: 50px;
@@ -280,15 +290,11 @@ nav a:hover {
 
 /* ANIMACION CONTACTO */
 
-.ticker .contacto-ticker {
-  background-color: #1F4AC9;
-}
-
 .contacto-info{
   display: flex;
   flex-direction: row;
   padding: 50px;
-  gap: 555px;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -311,15 +317,14 @@ nav a:hover {
 
 footer {
   background-color: #1F4AC9;
-  height: 60px;
+  height: auto;
   width: 100%;
-  gap: 450px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   box-sizing: border-box;
-  position: absolute;
+  padding: 10px;
 }
 
 .derechos-footer{
@@ -391,10 +396,6 @@ footer {
     padding: 20px;
   }
 
-  .carrusel-container {
-    width: 50%;
-  }
-
   .slide {
     flex: 0 0 80%;
     margin: 10px auto;
@@ -451,8 +452,8 @@ footer {
   }
 
   .icons-footer img {
-    height: 36px;
-    width: 36px;
+    height: 25px;
+    width: 25px;
   }
 
   .derechos-footer p {
@@ -565,9 +566,16 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 50px;
+  padding-left: 100px;
 }
+
+.texto-sobremi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 .texto-sobremi p{
   margin-bottom: 10px;
@@ -596,7 +604,7 @@ button:hover {
   padding-left: 42px;
   padding-right: 42px;
   padding-bottom: 10px;
-  background-color: #D05F15;
+  background-color: #1F4AC9;
   border-radius: 65px;
   height: 263px;
   width: 350px;
@@ -612,9 +620,56 @@ ul{
 }
 
 .habilidades{
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   column-gap: 90px
+}
+
+@media screen and (max-width: 500px){
+
+   .info {
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+    margin: 30px 0;
+    row-gap: 20px;
+  }
+
+  .texto-sobremi{
+    display: flex;
+    flex-wrap: ;
+    justify-content: center;
+  }
+
+  .sobremi {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .columna {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .caja {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  .habilidades {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  li {
+    padding-top: 10px;
+    text-align: center;
+  }
 }
 
 /* PROYECTOS - HTML */
@@ -631,18 +686,122 @@ ul{
   gap: 15px;
 }
 
-.texto-proyectos{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .img-proyectos{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.img-proyectos img{
-  width: 45%; /* solo puse esto para saber el tamaño ideal de las imagenes y si funcionaba el wrap */
+#galeria {
+	display: none;
+	width: 100%;
+  height: 100%;
+	justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+	background-color: rgba(31, 74, 201, 0.5);
+	position: fixed;
+  gap: 12px;
+	z-index: 1000;
 }
+
+#galeria-oculta {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	z-index: 20;
+}
+
+#galeria-ilus {
+	display: none;
+	width: 100%;
+  height: 100%;
+	justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+	background-color: rgba(31, 74, 201, 0.5);
+	position: fixed;
+  gap: 12px;
+	z-index: 1000;
+}
+
+#galeria-oculta-ilus {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	z-index: 20;
+}
+
+.contenido-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1250px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.contenido-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1250px;
+	height: 100vh;
+	justify-content: space-between;
+}
+
+.contenido-galeria img{
+  margin: 10px;
+}
+
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 2%;
+}
+
+#diseno-1 {
+	background-image: url("img/proyectos/vino.png");
+}
+
+#diseno-2 {
+	background-image: url("img/proyectos/estampillas.png");
+}
+
+#diseno-3 {
+	background-image: url("img/proyectos/libro.png");
+}
+
+#diseno-4 {
+	background-image: url("img/proyectos/poster.png");
+}
+
+#ilus-1 {
+	background-image: url("img/proyectos/hiena.png");
+}
+
+#ilus-2 {
+	background-image: url("img/proyectos/zorro.png");
+}
+
+#ilus-3 {
+	background-image: url("img/proyectos/mujer.png");
+}
+
+#ilus-4 {
+	background-image: url("img/proyectos/carnero.png");
+}
+
+
