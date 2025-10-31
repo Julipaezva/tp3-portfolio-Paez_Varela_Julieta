@@ -5,6 +5,7 @@
         <title>Portfolio Julieta Paez - Inicio</title>
         <link href="estilos.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="-" type="image/png">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
@@ -22,9 +23,10 @@
 <!-------MAIN------->        
         <main>
             <section class="introduccion">
-                <div class="intro-izq">
+                <div class="intro">
                     <h1>Hola!</h1>
-                    <h2>Me llamo Julieta Paez Varela</h2>
+                    <h2>Me llamo Julieta</h2>
+                    <h2>Paez Varela</h2>
                 </div>
             </section>
             <section class="ticker proyectos-ticker">
@@ -36,7 +38,8 @@
             </section>
             <section class="seccion-carrusel">
                 <div class="carrusel">
-                    <button class="carrusel-arrow carrusel-prev" data-button="button-prev" onclick="app.processingButton(event)">‹</button>
+                    <button class="carrusel-arrow carrusel-prev" data-button="button-prev" onclick="app.processingButton(event)">‹</button> 
+                
                 <div class="carrusel-container">
                 <div class="carrusel-track" id="track">
                     <div class="slide">
@@ -59,11 +62,11 @@
                     <button class="carrusel-arrow carrusel-next" data-button="button-next" onclick="app.processingButton(event)">›</button>
             </section>
 
-                <section class="seccion-proyectos">
-                    <button class="proyectos-button">Ver más</button>
-                </section> 
+                <div class="boton-proyectos">
+                    <a href="proyectos.html">Ver más</a>
+                </div> 
 
-            <section class="ticker proyectos-ticker">
+            <section class="ticker contacto-ticker">
             <div class="ticker__track">
                 <span>Contacto • Contacto • Contacto • Contacto • Contacto • </span>
                 <span aria-hidden="true">Contacto • Contacto • Contacto • Contacto • Contacto • </span>
@@ -71,11 +74,14 @@
             </section>
 
             <section class="contacto-info">
-                <h3>¿Tenés alguna idea?</h3>
-                <p>Contame cual es tu idea en mente y trabajemos juntos.¡Tu consulta no molesta!</p>
-                    <div>
-                        <a href="contacto.html"><button class="contacto-button">Contacto</button></a>
-                    </div>
+                <div class="contacto-texto">
+                    <h3>¿Tenés alguna idea?</h3>
+                    <p>Contame cual es tu idea en mente y trabajemos juntos.</p>
+                    <p>¡Tu consulta no molesta!</p>
+                </div>    
+                <div class="boton-contacto">
+                    <a href="contacto.html">Contacto</a>
+                </div>                
             </section>
         </main>
 <!-------FOOTER------->        

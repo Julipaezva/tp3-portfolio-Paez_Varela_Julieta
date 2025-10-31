@@ -4,61 +4,49 @@
 *{
   margin: 0px;
   padding: 0px;
+  font-family: 'Alexandria';
 }
 
 /* FONTS */
 
 h1 {
   color: #D05F15;
-  font-family: 'Alexandria';
-  font-size: 315px;
+  font-size: 19.7em;
   font-weight: 700;
   line-height: normal;
 }
 
 h2{
-  display: inline-block; 
   color: #1F4AC9;
-  font-family: 'Alexandria';
-  font-size: 100px;
+  font-size: 4.8em;
   font-weight: 600;
   margin: 50px;
 }
 
 .h2-contacto{
-  display: inline-block; 
   color: #FCD1CD;
-  font-family: 'Alexandria';
-  font-size: 100px;
-  font-weight: 600;
-  margin: 50px;
 }
 
-.intro-izq h2 { 
+.intro h2 { 
   color: #FCD1CD;
+  margin: 0;
 }
 
 h3 {
-  display: inline-block; 
-  font-family: 'Alexandria';
   font-weight: bold;
   color: #1F4AC9;
-  font-size: 30pt;
+  font-size: 2.5em;
 }
 
 h4 {
-  display: inline-block; 
-  font-family: 'Alexandria';
   font-weight: bold;
   color: #1F4AC9;
-  font-size: 16pt;
+  font-size: 1.3em;
 }
 
 h5 {
-  display: inline-block; 
   color: #1F4AC9;
-  font-family: 'Alexandria';
-  font-size: 50px;
+  font-size: 3.1em;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -71,16 +59,15 @@ p{
 }
 
 span{
-  font-family: 'Alexandria';
   color: #1F4AC9;
-  font-size: 16pt;
+  font-size: 1.3em;
   font-weight: 500;
 }
 
 label {
   font-family: 'Poppins';
   color: black;
-  font-size: 16pt;
+  font-size: 1.3em;
   font-weight: 500;
 }
 
@@ -94,6 +81,7 @@ footer p{
 
 body{
   background: #FCD1CD;
+  overflow-x: hidden;
 }
 
 .body-contacto{
@@ -103,7 +91,7 @@ body{
 /* HEADER */
 
 header{
-  height: 50px;
+  height: auto;
   background-color: #1F4AC9;
   display: flex;
   justify-content: space-between;
@@ -121,13 +109,12 @@ nav {
   list-style: none;
   display: flex;
   gap: 56px;
-  padding-left: 100px; 
-  padding-right: 100px;
+  padding-left: 50px; 
+  padding-right: 50px;
 }
 
 nav .botonera {
-  height: 30px;
-  display: inline-flex; 
+  height: 30px; 
   justify-content: center; 
   align-items:flex-start;
   text-align: center;
@@ -135,11 +122,9 @@ nav .botonera {
 }
 
 nav a{
-  font-size: 20px;
+  font-size: 1.3em;
   padding: 10px;
   color: #FCD1CD; 
-  font-family:'Alexandria';
-  display: inline-flex;
   justify-content: center; 
   text-align: center;
   transition-duration: 0.3s;
@@ -155,9 +140,7 @@ nav a:hover {
 /* MAIN - INDEX */
 
 .introduccion {
-  display: flex; 
-  align-items: flex-start;
-  height: 976px;
+  height: auto;
   background-color: #1F4AC9;
 }
 
@@ -166,14 +149,9 @@ nav a:hover {
   100%{transform:translateX(15px)}
 }
 
-.intro-izq{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 700px;
-  padding-left: 40px;
-  padding-right: 40px;
+.intro{
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 
 /* ANIMACION PROYECTOS */
@@ -203,7 +181,6 @@ nav a:hover {
   font-weight: 500;
 }
 
-/* Animación */
 @keyframes scroll {
   0% {
     transform: translateX(0%);
@@ -218,7 +195,9 @@ nav a:hover {
 .seccion-carrusel {
   max-width: 1200px;
   margin: auto;
-  padding: 50px;
+  padding: 50px 50px 15px 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .carrusel {
@@ -258,15 +237,10 @@ nav a:hover {
 }
 
 .carrusel-arrow {
-  background-color: #ede4d1;
-  color: #4b6bff;
-  border: 2px solid #4b6bff;
-  border-radius: 40px;
-  width: 48px;
-  height: 48px;
-  font-size: 30pt;
-  font-size: 18px;
+  color: #1F4AC9;
+  font-size: 70px;
   cursor: pointer;
+  border: 0;
   z-index: 1;
 }
 
@@ -279,10 +253,59 @@ nav a:hover {
 }
 
 .carrusel-arrow:hover{
-  background: #4b6bff;
+  color: #D05F15;
+  background-color: transparent;
 }
 
+.boton-proyectos {
+  display: flex;
+  padding: 0 50px 50px 0;
+  justify-content: flex-end;
+}
 
+.boton-proyectos a{
+  background-color: #1F4AC9;
+  color: #FCD1CD;
+  font-size: 16pt;
+  text-decoration: none;
+  padding: 10px;
+  height: 26px;
+  width: auto;
+  border-radius: 100px;
+}
+
+.boton-proyectos a:hover{
+  background-color: #D05F15;
+}
+
+/* ANIMACION CONTACTO */
+
+.ticker .contacto-ticker {
+  background-color: #1F4AC9;
+}
+
+.contacto-info{
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 555px;
+  align-items: center;
+}
+
+.boton-contacto a{
+  background-color: #1F4AC9;
+  color: #FCD1CD;
+  font-size: 16pt;
+  text-decoration: none;
+  padding: 10px;
+  height: 26px;
+  width: auto;
+  border-radius: 100px;
+}
+
+.boton-contacto a:hover{
+  background-color: #D05F15;
+}
 
 /* FOOTER */
 
@@ -290,10 +313,9 @@ footer {
   background-color: #1F4AC9;
   height: 60px;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
   gap: 450px;
-  display: inline-flex; 
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -307,9 +329,7 @@ footer {
 
 .icons-footer {
   display: flex;
-  justify-content: flex-end;
   gap: 10px;
-  position: relative;
 }
 
 .icons-footer img{
@@ -320,6 +340,126 @@ footer {
 
 .icons-footer img:hover {
   transform: scale(1.1);
+}
+
+/* MEDIA RESPONSIVE */
+
+@media screen and (max-width: 500px) {
+
+  h1 {
+    font-size: 10em;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .logo{
+    margin-bottom: 10px;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 15px;    
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .introduccion {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .intro {
+    padding: 20px;
+  }
+
+   .seccion-carrusel {
+    padding: 20px;
+  }
+
+  .carrusel-container {
+    width: 50%;
+  }
+
+  .slide {
+    flex: 0 0 80%;
+    margin: 10px auto;
+  }
+
+  .boton-proyectos {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .contacto-info {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .boton-contacto a {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .ticker {
+    height: 40px;
+  }
+
+  .ticker__track span {
+    font-size: 1.2em;
+  }
+
+   footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+  }
+
+  .icons-footer img {
+    height: 36px;
+    width: 36px;
+  }
+
+  .derechos-footer p {
+    font-size: 0.8em;
+    text-align: center;
+    
+  } footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+  }
+
+  .icons-footer img {
+    height: 36px;
+    width: 36px;
+  }
+
+  .derechos-footer p {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
 }
 
 /* CONTACTO - HTML */
