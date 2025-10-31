@@ -70,19 +70,10 @@ p{
   font-size: 1.1em;
 }
 
-p{}
-
 span{
   font-family: 'Alexandria';
   color: #1F4AC9;
   font-size: 16pt;
-  font-weight: 500;
-}
-
-.ticker-text-group span{
-  font-family: 'Poppins';
-  color: #FCD1CD;
-  font-size: 34pt;
   font-weight: 500;
 }
 
@@ -187,53 +178,38 @@ nav a:hover {
 
 /* ANIMACION PROYECTOS */
 
-.ticker-section {
-  width: 100vw; 
-  height: 60px; 
-  overflow: hidden
-}
-
-.ticker-content-wrapper {
-  display: flex;
-  white-space: nowrap;
-  animation: marquee 60s linear infinite;
-  line-height: 90px; 
-  letter-spacing: 1.28px; 
-}
-
-.ticker-text-group {
-  display: flex;
-  align-items: center;
-}
-
-.ticker-text-group span {
-  padding: 0 41px; 
-}
-
-.ticker-text-group .dot {
-  padding: 0 41px; 
-}
-
-.proyectos-ticker .ticker-proyectos-background {
+.ticker {
+  width: 100vw;
+  height: 60px;
+  overflow: hidden;
   background-color: #D05F15;
-  height: 100%;
   display: flex;
   align-items: center;
 }
 
-.proyectos-ticker .ticker-contacto-background {
-  background-color: #1F4AC9;
-  height: 100%;
-  display: flex;
-  align-items: center;
+.ticker__track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll 40s linear infinite;
+  line-height: 90px;
+  letter-spacing: 2px;
 }
 
-@keyframes marquee {
+.ticker__track span {
+  padding: 7px;
+  font-family: 'Poppins';
+  color: #FCD1CD;
+  font-size: 28pt;
+  font-weight: 500;
+}
+
+/* Animación */
+@keyframes scroll {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
 
@@ -288,6 +264,7 @@ nav a:hover {
   border-radius: 40px;
   width: 48px;
   height: 48px;
+  font-size: 30pt;
   font-size: 18px;
   cursor: pointer;
   z-index: 1;
