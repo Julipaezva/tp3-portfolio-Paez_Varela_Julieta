@@ -570,13 +570,6 @@ button:hover {
   padding-left: 100px;
 }
 
-.texto-sobremi{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
 .texto-sobremi p{
   margin-bottom: 10px;
   width: 80%;
@@ -637,7 +630,7 @@ ul{
 
   .texto-sobremi{
     display: flex;
-    flex-wrap: ;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -692,7 +685,7 @@ ul{
   gap: 20px;
 }
 
-#galeria {
+#galeria-diseno {
 	display: none;
 	width: 100%;
   height: 100%;
@@ -706,7 +699,7 @@ ul{
 	z-index: 1000;
 }
 
-#galeria-oculta {
+#galeria-oculta-diseno {
 	display: flex;
 	width: 100%;
 	overflow: hidden;
